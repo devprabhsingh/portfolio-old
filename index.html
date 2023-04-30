@@ -19,11 +19,16 @@
             <a href="#s1">About</a>
             <a href="#s3">Projects</a>
             <a href="#s4">Contact</a>
-            <a href="https://docs.google.com/document/d/1McnLqJ8oPo8awWx12RNWC3gu5zfAR1x0XGU-UQQgQfk/edit" id="resumeButton">My Resume
+            <a href="https://docs.google.com/document/d/1McnLqJ8oPo8awWx12RNWC3gu5zfAR1x0XGU-UQQgQfk/edit" 
+            target="_blank"
+            id="resumeButton">My Resume
             </a>
          
         </div>
-        <i id="ham"class="fas fa-bars"></i>
+    
+        <img id="ham"class="fas fa-bars"
+        style="height:30px;width:30px"
+        src="./menu.png"/>
     </header>
     <section id="s1">
         <div id="s1-wrapper">
@@ -34,12 +39,15 @@
             <h1>Hi, I am <br/><span id="name"></span><br></h1>
             <h3>A <span>Full-stack web developer</span></h3>
         </div>
-        <p id="about-me">  
-             As a self-motivated and driven full stack web developer, I am constantly
-             exploring new technologies and techniques to create intuitive and user-friendly
-              web experiences. <a href="#" onclick="showEmail()">Contact Me</a><br/>
-            <a id="email" href="mailto:iprabhsingh0@gmail.com">iprabhsingh0@gmail.com</a> 
-        </p>
+        <div id="skills">
+            <h2>My <span>tech</span> stack</h2>
+            <div>
+            <img src="https://img.icons8.com/color/100/000000/mongodb.png"/>
+            <img style="border-radius: 50%;" src="./expressjs.png"/>
+            <img src="https://img.icons8.com/officel/160/000000/react.png"/>
+            <img src="https://img.icons8.com/color/100/null/nodejs.png"/>
+        </div>
+        </div>
         </div>
 
         <p><a href="#s3"> <img id="down-arrow" src="https://media.giphy.com/media/Wtg8Bmgul1Qxc0otod/giphy.gif"></a></p>         
@@ -60,15 +68,15 @@
                        <div class="project-info" id="interactly-info">
                            <h2 class="project-title">Interactly</h2><br>
                            <div> <a href="https://interactly.herokuapp.com/">Live</a>
-                            <a href="https://github.com/prabhjot2002/TextMe">Code</a>
+                            <a target="_blank"
+                            href="https://github.com/prabhjotsingh5/TextMe">Code</a>
                             </div>
                            <p class="desc">Interactly is a personal social media web app on which users can chat and call to their beloved ones
                                .I used Peerjs for real-time calling and socket.io for real-time chat.i used JWT tokens for authentication.
                            </p>
                        </div>
-       
                    </div>
-    
+     
 
                 <div class="project-box">
                      <div class="project-pics">
@@ -78,7 +86,8 @@
                     <div class="project-info" id="facechat-info">
                         <h2 class="project-title">FaceChat</h2>
                         <div> <a href="https://facechatapp.herokuapp.com/">Live</a>
-                        <a href="https://github.com/prabhjot2002/Facechat">Code</a>
+                        <a target="_blank"
+                        href="https://github.com/prabhjotsingh5/Facechat">Code</a>
                         </div>
                         <p class="desc">Facechat is a social media app on which users can post their pictures and their thoughts to share
                              them with the whole world.This was my term project and my first ejs project with backend.
@@ -101,8 +110,10 @@
 
                 <div class="project-info" id="musicplay-info">
                     <h2 class="project-title">Musicplay</h2><br>
-                    <div> <a href="https://prabhjot2002.github.io/musicplay/">Live</a>
-                        <a href="https://github.com/prabhjot2002/musicplay">Code</a>
+                    <div> <a target="_blank"
+                        href="https://prabhjotsingh5.github.io/musicplay/">Live</a>
+                        <a target="_blank"
+                        href="https://github.com/prabhjotsingh5/musicplay">Code</a>
                         </div>
                     <p class="desc">An online music player to play any song by search.It is using the Deezer API.</p>
                 </div>         
@@ -117,8 +128,10 @@
                 </div>
                 <div class="project-info" id="youtube-info">
                     <h2 class="project-title">Youtube-clone</h2><br>
-                    <div> <a href="https://prabhjot2002.github.io/youtube-clone/">Live</a>
-                        <a href="https://github.com/prabhjot2002/youtube-clone">Code</a>
+                    <div> <a target="_blank"
+                        href="https://prabhjotsingh5.github.io/youtube-clone/">Live</a>
+                        <a target="_blank"
+                        href="https://github.com/prabhjotsingh5/youtube-clone">Code</a>
                         </div>
                     <p class="desc">An youtube clone with React. It is using the Youtube API to search for videos.</p>
                 </div>      
@@ -132,8 +145,10 @@
                 </div>
                 <div class="project-info" id="weather-info">
                     <h2 class="project-title">Weather App</h2><br>
-                    <div> <a href="https://prabhjot2002.github.io/weatherApp">Live</a>
-                        <a href="https://github.com/prabhjot2002/weatherApp">Code</a>
+                    <div> <a target="_blank"
+                        href="https://prabhjotsingh5.github.io/weatherApp">Live</a>
+                        <a target="_blank"
+                        href="https://github.com/prabhjotsingh5/weatherApp">Code</a>
                         </div>
                     <p class="desc">Check the weather conditions in your area with this app. I am using Accuweather API.</p>
                 </div>
@@ -156,8 +171,10 @@
                 </div>
                 <div class="project-info" id="talkie-info">
                     <h2 class="project-title">Talkie</h2><br>
-                    <div> <a href="https://prabhjot2002.github.io/talkie">Live</a>
-                        <a href="https://github.com/prabhjot2002/talkie">Code</a>
+                    <div> <a target="_blank" 
+                        href="https://prabhjotsingh5.github.io/talkie">Live</a>
+                        <a target="_blank"
+                        href="https://github.com/prabhjotsingh5/talkie">Code</a>
                         </div>
                     <p class="desc">A smartphone branding website Talkie with just HTML and CSS.</p>
                 </div>
@@ -173,8 +190,10 @@
             </div>
             <div class="project-info" id="foodieman-info">
                 <h2 class="project-title">FoodieMan</h2><br>
-                <div> <a href="https://prabhjot2002.github.io/foodieman">Live</a>
-                    <a href="https://github.com/prabhjot2002/foodieman">Code</a>
+                <div> <a target="_blank"
+                    href="https://prabhjotsingh5.github.io/foodieman">Live</a>
+                    <a target="_blank"
+                    href="https://github.com/prabhjotsingh5/foodieman">Code</a>
                     </div>
                 <p class="desc">A restaurant website to see their menu and prices.</p>
             </div>   

@@ -11,10 +11,11 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 #welcome {
-  z-index: 5;
+  z-index: 500;
   position: absolute;
   background: white;
   width: 100%;
@@ -120,39 +121,39 @@ header {
     transform: translate(0, 0) rotateY(360deg);
   }
 }
-@keyframes aboutmeanim {
+span{
+  color:rgb(160, 221, 39);
+}
+#skills div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#skills h2{
+  padding:10px;
+  margin-bottom: 20px;
+}
+#skills img{
+  z-index: 20;
+  height:100px;
+  width:100px;
+  margin:0 20px;
+  animation: skillsimg 1s ease-in-out 1s forwards;
+}
+#skills div >img:hover{
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+@keyframes skillsimg {
   from {
     opacity: 0;
-    transform: translate(60px, 0);
+    transform: translate(60px, 0) rotateY(0deg);
   }
   to {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translate(0, 0 ) rotateY(360deg);
   }
-}
-#about-me {
-  flex: 0.5;
-  color: white;
-  width: 70%;
-  padding-right: 50px;
-  background-color: rgba(0, 0, 0, 0.714);
-  font-size: 25px;
-  opacity: 0;
-  animation: aboutmeanim 1s ease-in-out 2s forwards;
-}
-span {
-  color: rgb(160, 221, 39);
-}
-
-#email {
-  font-size: 20px;
-  text-decoration: underline;
-  color: rgb(160, 221, 39);
-  opacity: 0;
-}
-#about-me a {
-  margin: 5px 0;
-  color: rgb(160, 221, 39);
 }
 #down-arrow {
   z-index: 1000;
@@ -561,5 +562,9 @@ footer #name {
   }
   #s4-inner img{
     width: 70%;
+  }
+  #skills img{
+    height:50px;
+    width:50px;
   }
 }
